@@ -1,6 +1,10 @@
 var css = require('sheetify')
 var choo = require('choo')
-require('nanologger')
+var logger  = require('nanologger')
+
+var log = logger("fail")
+
+log.warn('build fails')
 
 css('tachyons')
 
