@@ -1,5 +1,6 @@
 var css = require('sheetify')
 var choo = require('choo')
+require('nanologger')
 
 css('tachyons')
 
