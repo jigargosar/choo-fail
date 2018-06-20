@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "rm -fr ./choo-test-cca && npx create-choo-app choo-test-cca 'Check if CCA app builds' && cd choo-test-cca && npm add nanologger && echo 'require(\"nanologger\") \n' >> index.js && npm run build && ls -l dist/index.html"
+    "test": "rm -fr ./choo-test-cca && npx create-choo-app choo-test-cca 'Check if CCA app builds' && cd choo-test-cca && npm add nanologger && echo ';require(\"nanologger\") ;' >> index.js && tail index.js && npm run build && ls -l dist/index.html"
   },
   "dependencies": {
    },
