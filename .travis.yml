@@ -1,6 +1,9 @@
 language: node_js
 node_js:
-  - "node"
+  - node
 
 script:
-  - "npm run build"
+  - npx create-choo-app choo-test-cca 'Check if CCA app build'
+  - cd choo-test-cca
+  - npm add nanologger
+  -
